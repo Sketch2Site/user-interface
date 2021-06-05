@@ -1,5 +1,5 @@
 const getRightHero = () => {
-  return ```
+  return `
 
     <section class="text-gray-700 ">
     <div class="container flex flex-col items-start px-5 py-16 mx-auto lg:items-center md:flex-row lg:px-28">
@@ -91,7 +91,7 @@ const getRightHero = () => {
     </div>
   </section>
 
-    ```;
+    `;
 };
 
 module.exports = { getRightHero };

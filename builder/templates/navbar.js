@@ -1,6 +1,5 @@
 const getNavbar = () => {
-  return ```
-
+  const data = `
     <div class="items-center">
     <div class="text-gray-700 transition duration-500 ease-in-out transform bg-white border rounded-lg ">
       <div class="flex flex-col flex-wrap p-5 mx-auto md:items-center md:flex-row">
@@ -8,7 +7,7 @@ const getNavbar = () => {
           <div class="inline-flex items-center">
             <div class="w-2 h-2 p-2 mr-2 rounded-full bg-gradient-to-tr from-blue-500 to-blue-600">
             </div>
-            <h2 class="block p-2 text-xl font-medium tracking-tighter text-black transition duration-500 ease-in-out transform cursor-pointer hover:text-gray-500 lg:text-x lg:mr-8"> wickedblocks </h2>
+            <h2 class="block p-2 text-xl font-medium tracking-tighter text-black transition duration-500 ease-in-out transform cursor-pointer hover:text-gray-500 lg:text-x lg:mr-8"> Sketch2Site </h2>
           </div>
         </a>
         <nav class="flex flex-wrap items-center justify-center text-base md:ml-auto md:mr-auto">
@@ -31,8 +30,9 @@ const getNavbar = () => {
       </div>
     </div>
   </div>
+    `;
 
-    ```;
+  return data;
 };
 
 module.exports = { getNavbar };

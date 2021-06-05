@@ -1,5 +1,5 @@
 const putIntoLayout = (totalItems) => {
-  const mainLayout = ```
+  const mainLayout = `
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -16,7 +16,7 @@ const putIntoLayout = (totalItems) => {
         
     </body>
     </html>
-    ```;
+    `;
 
   return mainLayout;
 };

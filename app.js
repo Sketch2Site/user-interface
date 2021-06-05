@@ -37,6 +37,9 @@ app.use(bodyParser.raw());
 /** directly serve some stuff */
 app.use("/", express.static(path.join(__dirname, "public")));
 
+/** load application generators */
+const { siteBuilder } = require("./builder");
+
 /** upload and save image locally */
 app.post("/", upload.single("image"), function (req, res, next) {
   console.log(req.body, req.file);
@@ -48,6 +51,18 @@ app.post("/", upload.single("image"), function (req, res, next) {
 /** render homepage */
 app.get("/", (req, res) => {
   res.render("pages/home");
+});
+
+app.get("/generated", (req, res) => {
+  res.send(
+    siteBuilder({
+      cover: true,
+      navbar: true,
+      leftHero: true,
+      rightHero: true,
+      paragraph: true,
+    })
+  );
 });
 
 app.listen(3000, () => {

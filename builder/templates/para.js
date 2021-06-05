@@ -1,5 +1,5 @@
 const getParagraph = () => {
-  return ```  
+  return `  
     <section class="text-gray-700 ">
     <div class="container flex flex-col items-center px-5 py-8 mx-auto">
       <div class="flex flex-col w-full mb-12 text-left ">
@@ -11,7 +11,7 @@ const getParagraph = () => {
       </div>
     </div>
   </section>
-    ```;
+    `;
 };
 
 module.exports = { getParagraph };

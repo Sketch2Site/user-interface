@@ -1,6 +1,5 @@
 const getLeftHero = () => {
-  return ```
-    
+  return `
     <section class="text-gray-700 ">
     <div class="container flex flex-col items-center px-5 py-16 mx-auto md:flex-row lg:px-28">
       <div class="flex flex-col items-start mb-16 text-left lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 md:mb-0">
@@ -19,8 +18,7 @@ const getLeftHero = () => {
       </div>
     </div>
   </section>
-
-    ```;
+    `;
 };
 
 module.exports = { getLeftHero };
